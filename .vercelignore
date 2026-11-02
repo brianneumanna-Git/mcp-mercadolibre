@@ -1,0 +1,7 @@
+.venv
+__pycache__
+tests
+.env
+tokens.json
+acciones.jsonl
+supabase

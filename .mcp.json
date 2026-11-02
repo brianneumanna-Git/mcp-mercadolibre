@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mercadolibre": {
+      "type": "http",
+      "url": "https://TU-PROYECTO.vercel.app/mcp"
+    }
+  }
+}
