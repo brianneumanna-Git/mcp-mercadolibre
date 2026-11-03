@@ -80,7 +80,7 @@ Sube esta carpeta a un **repositorio privado**. El `.gitignore` ya excluye `.env
 1. **Add New → Project** e importa el repositorio. Framework: detecta FastAPI (`app.py`).
 2. En **Settings → Environment Variables** agrega las variables de `.env.example` (las secretas como *Sensitive*). Genera `MCP_BEARER_TOKEN`, `AUTH_SETUP_KEY` y `CRON_SECRET` con `openssl rand -hex 32` o un gestor de contraseñas.
 3. Despliega y anota la URL de producción, p. ej. `https://ml-mcp-xxx.vercel.app`.
-4. Desactiva **Deployment Protection** (Vercel Authentication) para producción, o Claude no podrá llegar al endpoint. La protección la da el Bearer token.
+4. En **Deployment Protection** deja **Standard Protection**: protege las URLs de prueba y deja abierto el dominio de producción, que es el que usa tu asistente. **No** uses "All Deployments", o el asistente no podrá llegar al endpoint. La protección del servidor la da el Bearer token.
 
 ### 4. Mercado Libre (DevCenter)
 1. En tu aplicación, define la **URI de redirect**: `https://TU-PROYECTO.vercel.app/auth/callback` (exacta, HTTPS).
